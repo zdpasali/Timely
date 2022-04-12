@@ -1,0 +1,23 @@
+.testbutton {
+    top:50%;
+    left:25%;
+    width:100px;
+    height:40px;
+    position: absolute;
+    z-index: 2;
+    background: orange; 
+    }   
+
+    .btn-space {
+        margin-left: 20px;
+        
+    }
+
+    .btn-space2{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .txtspace{
+        position: absolute;
+    }
