@@ -39,6 +39,26 @@
 
     </li>
 
+    <h5 *ngIf="timerOn">Timer is on!</h5>
+
 </ul>
 </nav>
 
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Project Name</th>
+            <th>Start time</th>
+            <th>End time</th>
+            <th>Duration</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor ="let dataItem of ListofProjects">
+
+            <td>{{dataItem.ProjectName}}</td>
+            <td>{{dataItem.StartTime}}</td>
+            <td>{{dataItem.EndTime}}</td>
+            <td>{{dataItem.DurationTime}}</td>
+</table>
