@@ -17,8 +17,6 @@ C:\Users\DELL\source\projects\Timely\api\TimelyAPI\TimelyAPI\bin\Debug\netcoreap
 C:\Users\DELL\source\projects\Timely\api\TimelyAPI\TimelyAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\DELL\source\projects\Timely\api\TimelyAPI\TimelyAPI\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Users\DELL\source\projects\Timely\api\TimelyAPI\TimelyAPI\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
-C:\Users\DELL\source\projects\Timely\api\TimelyAPI\TimelyAPI\obj\Debug\netcoreapp3.1\TimelyAPI.csproj.CoreCompileInputs.cache
-C:\Users\DELL\source\projects\Timely\api\TimelyAPI\TimelyAPI\obj\Debug\netcoreapp3.1\TimelyAPI.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\DELL\source\projects\Timely\api\TimelyAPI\TimelyAPI\obj\Debug\netcoreapp3.1\TimelyAPI.csproj.CopyComplete
 C:\Users\DELL\source\projects\Timely\api\TimelyAPI\TimelyAPI\obj\Debug\netcoreapp3.1\TimelyAPI.dll
 C:\Users\DELL\source\projects\Timely\api\TimelyAPI\TimelyAPI\obj\Debug\netcoreapp3.1\TimelyAPI.pdb
