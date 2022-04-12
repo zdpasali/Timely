@@ -20,6 +20,8 @@ export class ShowListComponent implements OnInit {
   public timerOff:boolean = true;
   public firstTimePressed:boolean = false;
 
+  ListOfStartTime:any=[];
+
   ngOnInit(): void {
     this.refreshProjectList();
     this.ProjectName=this.lst.ProjectName;
@@ -36,6 +38,7 @@ export class ShowListComponent implements OnInit {
     this.timerOn = true;
     this.firstTimePressed = true;
     this.timerOff = false;
+    this.ListOfStartTime.push(currentTimeStart);
   }
 
   endTimerClick(){
@@ -45,6 +48,22 @@ export class ShowListComponent implements OnInit {
   saveButtonClick(){
     var difference = new Date();
     difference.setTime(currentTimeStop.getTime() - currentTimeStart.getTime());
+    var dift =(("0" + (difference.getHours() - 1)).slice(-2)   + ":" + 
+    ("0" + difference.getMinutes()).slice(-2) + ":" + 
+    ("0" + difference.getSeconds()).slice(-2));
+    diffData = dift.toString();
+    this.ListOfStartTime=[];
+
+    var val = {ProjectName:this.ProjectName,
+      StartTime:currentTimeStart,
+      EndTime:currentTimeStop,
+      DurationTime:diffData}
+
+    this.service.addToProjectList(val).subscribe(res =>{this.refreshProjectList()});
+    this.timerOff=true;
+    this.timerOn=false;
+    this.refreshProjectList();
+    
   }
 
 }

@@ -61,4 +61,13 @@
             <td>{{dataItem.StartTime | date:'dd.MM.yyyy HH:mm:ss'}}</td>
             <td>{{dataItem.EndTime | date:'dd.MM.yyyy HH:mm:ss'}}</td>
             <td>{{dataItem.DurationTime}}</td>
-</table>
+        </tr>
+        <tr *ngIf="timerOn">
+
+            <td>...</td>
+            <td *ngFor ="let thisTime of ListOfStartTime.reverse()">{{thisTime | date:'dd.MM.yyyy HH:mm:ss'}}</td>
+            <td>...</td>
+            <td>...</td>
+        </tr>
+
+</tbody>
