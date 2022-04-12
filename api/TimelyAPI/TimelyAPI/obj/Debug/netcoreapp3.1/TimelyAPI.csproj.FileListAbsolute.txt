@@ -21,3 +21,11 @@ C:\Users\DELL\source\projects\Timely\api\TimelyAPI\TimelyAPI\obj\Debug\netcoreap
 C:\Users\DELL\source\projects\Timely\api\TimelyAPI\TimelyAPI\obj\Debug\netcoreapp3.1\TimelyAPI.dll
 C:\Users\DELL\source\projects\Timely\api\TimelyAPI\TimelyAPI\obj\Debug\netcoreapp3.1\TimelyAPI.pdb
 C:\Users\DELL\source\projects\Timely\api\TimelyAPI\TimelyAPI\obj\Debug\netcoreapp3.1\TimelyAPI.genruntimeconfig.cache
+C:\Users\DELL\source\projects\Timely\api\TimelyAPI\TimelyAPI\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\DELL\source\projects\Timely\api\TimelyAPI\TimelyAPI\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\DELL\source\projects\Timely\api\TimelyAPI\TimelyAPI\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\DELL\source\projects\Timely\api\TimelyAPI\TimelyAPI\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\DELL\source\projects\Timely\api\TimelyAPI\TimelyAPI\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\DELL\source\projects\Timely\api\TimelyAPI\TimelyAPI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\DELL\source\projects\Timely\api\TimelyAPI\TimelyAPI\obj\Debug\netcoreapp3.1\TimelyAPI.csproj.CoreCompileInputs.cache
+C:\Users\DELL\source\projects\Timely\api\TimelyAPI\TimelyAPI\obj\Debug\netcoreapp3.1\TimelyAPI.MvcApplicationPartsAssemblyInfo.cache

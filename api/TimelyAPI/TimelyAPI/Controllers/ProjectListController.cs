@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using System.Data.SqlClient;
 using System.Data;
+using TimelyAPI.Models;
 
 namespace TimelyAPI.Controllers
 {
@@ -43,6 +44,14 @@ namespace TimelyAPI.Controllers
                 }
             }
             return new JsonResult(table);
+        }
+
+        [HttpPost]
+        public JsonResult Post(ProjectRecord lst)
+        {
+
+
+            return new JsonResult("New project has been added!");
         }
 
     }
