@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { SharedService } from 'src/app/shared.service';
+var currentTimeStart = new Date();
+var currentTimeStop = new Date();
+var diffData="a";
 
 @Component({
   selector: 'app-show-list',
@@ -13,6 +16,9 @@ export class ShowListComponent implements OnInit {
   ListofProjects:any=[];
   lst:any;
   ProjectName="";
+  public timerOn:boolean = false;
+  public timerOff:boolean = true;
+  public firstTimePressed:boolean = false;
 
   ngOnInit(): void {
     this.refreshProjectList();
@@ -26,13 +32,19 @@ export class ShowListComponent implements OnInit {
   }
 
   startTimerClick(){
-
+    currentTimeStart = new Date();
+    this.timerOn = true;
+    this.firstTimePressed = true;
+    this.timerOff = false;
   }
 
   endTimerClick(){
+    currentTimeStop = new Date();
   }
 
   saveButtonClick(){
+    var difference = new Date();
+    difference.setTime(currentTimeStop.getTime() - currentTimeStart.getTime());
   }
 
 }
