@@ -49,7 +49,35 @@ namespace TimelyAPI.Controllers
         [HttpPost]
         public JsonResult Post(ProjectRecord lst)
         {
+            string query = @"
+                    insert into dbo.ProjectList
+                    ( ProjectName, StartTime, EndTime, DurationTime)
+                    values
+                    (
+                    
+                    '" + lst.ProjectName + @"'
+                    ,'" + lst.StartTime + @"'
+                    ,'" + lst.EndTime + @"'
+                    ,'" + lst.DurationTime + @"'
+                    )
+                    ";
 
+            DataTable table = new DataTable();
+            string sqlDataSource = _configuration.GetConnectionString("ProjectListAppConnection");
+            SqlDataReader myReader;
+            using (SqlConnection myCon = new SqlConnection(sqlDataSource))
+            {
+                myCon.Open();
+                using (SqlCommand myCommand = new SqlCommand(query, myCon))
+                {
+                    myReader = myCommand.ExecuteReader();
+                    table.Load(myReader); ;
+
+                    myReader.Close();
+                    myCon.Close();
+
+                }
+            }
 
             return new JsonResult("New project has been added!");
         }
